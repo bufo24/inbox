@@ -20,5 +20,6 @@ const input = {
     },
   },
 };
-
-module.exports = solc.compile(JSON.stringify(input)).contracts[":Inbox"];
+let output = JSON.parse(solc.compile(JSON.stringify(input)));
+output = output.contracts["Inbox.sol"];
+module.exports = output;
