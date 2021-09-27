@@ -8,15 +8,15 @@ beforeEach(async () => {
   inbox = await Inbox.deploy("Hello, world!");
 });
 
-describe("Inbox", function () {
+describe("Inbox", () => {
   it("Deploy Inbox", async function () {
     expect(inbox).to.exist;
     // expect(await inbox.message()).to.be.a;
   });
-  it("Get message", async function () {
+  it("Get message", async () => {
     expect(await inbox.message()).to.equal("Hello, world!");
   });
-  it("Change message", async function () {
+  it("Change message", async () => {
     const setMessageTx = await inbox.setMessage("Bye, world!");
     expect(await inbox.message()).to.equal("Bye, world!");
   });
