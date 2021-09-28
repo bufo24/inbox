@@ -3,6 +3,7 @@ const { ethers } = require("hardhat");
 
 let inbox;
 beforeEach(async () => {
+  // const [owner, addr1] = await ethers.getSigners();
   const Inbox = await ethers.getContractFactory("Inbox");
   inbox = await Inbox.deploy("Hello, world!");
 });
