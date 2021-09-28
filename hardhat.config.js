@@ -1,5 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
-const { INFURA_API_KEY, RINKEBY_PRIVATE_KEY } = require("./keys");
+// const { INFURA_API_KEY, RINKEBY_PRIVATE_KEY } = require("./keys");
 
 // task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 //   const accounts = await hre.ethers.getSigners();
